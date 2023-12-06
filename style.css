@@ -124,7 +124,7 @@ table {
     
 
     #section0 {
-      background-image: url('/Images/sec0.jpg'); /* Укажите путь к вашей фотографии */
+      background-image: url('./Images/sec0.jpg'); /* Укажите путь к вашей фотографии */
       background-size: cover;
       background-position: center;
       color: #fff; /* Цвет текста, чтобы он был виден на фоне */
@@ -145,7 +145,7 @@ table {
     }
 
     #section3 {
-      background-image: url('/Images/sec3.jpg'); /* Укажите путь к вашей фотографии */
+      background-image: url('./Images/sec3.jpg'); /* Укажите путь к вашей фотографии */
       background-size: cover;
       background-position: center;
       color: #fff; /* Цвет текста, чтобы он был виден на фоне */
@@ -168,7 +168,7 @@ table {
 
 
     #section5 {
-      background-image: url('/Images/sec5.jpg'); /* Укажите путь к вашей фотографии */
+      background-image: url('./Images/sec5.jpg'); /* Укажите путь к вашей фотографии */
       background-size: cover;
       background-position: center;
       color: #fff; /* Цвет текста, чтобы он был виден на фоне */
