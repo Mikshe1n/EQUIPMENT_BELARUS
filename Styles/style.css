@@ -1,0 +1,243 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #333333b7;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Устанавливаем высокий z-index, чтобы шапка была поверх других элементов */
+  }
+
+  nav {
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+  }
+  nav a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+  }
+  
+  nav a:hover, nav a:active {
+    background-color: #555555;
+  }
+
+h1 {
+    font-size: 68px;
+    font-variant: normal;
+    font-weight: 700;
+    vertical-align: baseline;
+    margin: 10px;
+    color: #ff9900;
+    z-index: 1;
+}
+h2 {
+    font-size: 48px;
+    font-variant: normal;
+    color: #ff9900;
+    z-index: 1;
+}
+
+h3 {
+    font-size: 28px;
+    font-variant: normal;
+    color: #ff9900;
+    z-index: 1;
+  }
+  
+  
+  h4 {
+    font-size: 20px;
+    font-variant: normal;
+    color: #ff9900;
+    z-index: 1;
+  }
+  h5{
+    font-size: 18px;
+    font-variant: normal;
+    color: #000000;
+    z-index: 1;
+  }
+
+.section {
+    text-align: center;
+    padding: 5em;
+}
+
+.container {
+    margin: auto;
+    z-index: 1000;
+}
+
+.textcols {
+	white-space: nowrap;
+}
+.textcols-item {
+    padding: 1em;
+    text-align: left;
+    white-space: normal;	
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.textcols-item_3 {
+  padding: 1em;
+  text-align: left;
+  white-space: normal;	
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.textcols .textcols-item:first-child {
+	margin-right: 4%;
+}
+.textcols-item_3 p {
+  font-size: 20px;
+  line-height: normal;
+}
+
+table {
+    width: 100%;
+    padding: 0.5em;
+    line-height: normal;
+}
+    tr td{
+        width: 70%;
+    }
+    
+
+    #section0 {
+      background-image: url('/Images/sec0.jpg'); /* Укажите путь к вашей фотографии */
+      background-size: cover;
+      background-position: center;
+      color: #fff; /* Цвет текста, чтобы он был виден на фоне */
+      text-align: center;
+      padding: 100px; /* Регулируйте отступы по своему усмотрению */
+      position: relative;
+      z-index: -2;
+    }
+    #section0::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5); /* Черный фон с 50% прозрачностью */
+      z-index: -1;
+    }
+
+    #section3 {
+      background-image: url('/Images/sec3.jpg'); /* Укажите путь к вашей фотографии */
+      background-size: cover;
+      background-position: center;
+      color: #fff; /* Цвет текста, чтобы он был виден на фоне */
+      text-align: center;
+      padding: 100px; /* Регулируйте отступы по своему усмотрению */
+      position: relative;
+      z-index: -2;
+    }
+    #section3::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5); /* Черный фон с 50% прозрачностью */
+      z-index: -1;
+    }
+
+
+
+    #section5 {
+      background-image: url('/Images/sec5.jpg'); /* Укажите путь к вашей фотографии */
+      background-size: cover;
+      background-position: center;
+      color: #fff; /* Цвет текста, чтобы он был виден на фоне */
+      text-align: center;
+      padding: 100px; /* Регулируйте отступы по своему усмотрению */
+      position: relative;
+      z-index: -2;
+    }
+    #section5::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5); /* Черный фон с 50% прозрачностью */
+      z-index: -1;
+    }
+
+
+
+    .stanok-img {
+      max-width: 60vw;
+      max-height: 20vw;
+    }
+
+    .Ico-feedback{
+      max-width: 6vh;
+      max-height: 6vh;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+    }
+
+
+    @media (max-width: 800px) {
+
+      nav a {
+        height: 60px;
+        width: 100px;
+      }
+      header {
+        height: 80px;
+        padding: 10px;
+      }
+      .section {
+          width: 100%;
+      }
+  
+      .textcols-item{
+          width: 40%;
+      }
+      .textcols-item_3{
+        width: 30%;
+      }
+  
+      .textcols .textcols-item:first-child {
+          margin-right: 4%;
+      }
+
+  
+      tr td {
+          width: 70%;
+      }
+      footer {
+        width: 100%;
+      }
+  }
