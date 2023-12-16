@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     activateSection();
 });
 
-
-
-
+function closeMenu() {
+    document.getElementById("menu-icon").checked = false;
+}
 

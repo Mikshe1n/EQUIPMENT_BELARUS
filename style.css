@@ -6,35 +6,59 @@ body {
     display: flex;
     flex-direction: column;
     scroll-behavior: smooth;
+
+}
+header {
+  background-color: #333333e7;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 
-header {
-    background-color: #333333b7;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Устанавливаем высокий z-index, чтобы шапка была поверх других элементов */
+nav {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  
+}
+
+#menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+#menu-icon:checked + label + nav {
+  max-height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  nav a {
+      display: block;
   }
 
-  nav {
-    display: flex;
-    justify-items: center;
-    justify-content: space-evenly;
+  #menu-icon {
+      display: block;
   }
-  nav a {
-    font-size: 18px;
-    color: #fff;
-    text-decoration: none;
-    padding: 0.5em 1em;
+
+  #menu-icon + label + nav {
+      max-height: 0;
   }
-  
-  nav a:hover, nav a:active {
-    background-color: #555555;
-  }
+}
+
+
+
+
 
 h1 {
     font-size: 68px;
