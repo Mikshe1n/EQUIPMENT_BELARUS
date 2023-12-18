@@ -265,6 +265,16 @@ button{
     #menu-icon + label + nav {
         max-height: 0;
     }
+    .textcols {
+      white-space: wrap;
+    }
+    
+    .textcols-item_3 {
+      width: 50%;
+    }
+    .textcols .textcols-item:first-child {
+      margin-bottom: 10%;
+    }
   }
   @media (max-width: 624px){
     h1{
@@ -279,16 +289,7 @@ button{
     h4{
       font-size: 18px;
     }
-    .textcols {
-      white-space: wrap;
-    }
-    
-    .textcols-item_3 {
-      width: 50%;
-    }
-    .textcols .textcols-item:first-child {
-      margin-bottom: 10%;
-    }
+
   }
 
   @media (max-width: 536px){
