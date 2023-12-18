@@ -7,6 +7,7 @@ body {
     flex-direction: column;
     scroll-behavior: smooth;
     height: 100%;
+    
 }
 header {
   background-color: #333333e7;
@@ -145,6 +146,7 @@ button{
       padding: 100px; /* Регулируйте отступы по своему усмотрению */
       position: relative;
       z-index: -2;
+      overflow: hidden;
     }
     #section0::before {
       content: "";
@@ -166,6 +168,7 @@ button{
       padding: 100px; /* Регулируйте отступы по своему усмотрению */
       position: relative;
       z-index: -2;
+      overflow: hidden;
     }
     #section3::before {
       content: "";
@@ -188,6 +191,7 @@ button{
       text-align: center;
       padding: 100px; /* Регулируйте отступы по своему усмотрению */
       position: relative;
+      overflow: hidden;
     }
 
 .r_prp{
@@ -275,15 +279,8 @@ button{
     h4{
       font-size: 18px;
     }
-
-  }
-
-  @media (max-width: 536px){
     .textcols {
       white-space: wrap;
-    }
-    .textcols-item {
-        width: 50%;
     }
     
     .textcols-item_3 {
@@ -292,6 +289,10 @@ button{
     .textcols .textcols-item:first-child {
       margin-bottom: 10%;
     }
+  }
+
+  @media (max-width: 536px){
+    
     .stanok-img {
       max-height: 100vw;
     }
