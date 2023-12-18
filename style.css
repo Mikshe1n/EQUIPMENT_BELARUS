@@ -1,4 +1,8 @@
-body {
+html {
+  margin: 0;
+  padding: 0;
+}
+body  {
     background-color: white;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -145,19 +149,9 @@ button{
       text-align: center;
       padding: 100px; /* Регулируйте отступы по своему усмотрению */
       position: relative;
-      z-index: -2;
       overflow: hidden;
     }
-    #section0::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.5); /* Черный фон с 50% прозрачностью */
-      z-index: -1;
-    }
+
 
     #section3 {
       background-image: url('./Images/sec3.jpg'); /* Укажите путь к вашей фотографии */
@@ -167,18 +161,7 @@ button{
       text-align: center;
       padding: 100px; /* Регулируйте отступы по своему усмотрению */
       position: relative;
-      z-index: -2;
       overflow: hidden;
-    }
-    #section3::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.5); /* Черный фон с 50% прозрачностью */
-      z-index: -1;
     }
 
 
@@ -295,7 +278,7 @@ button{
   @media (max-width: 536px){
     
     .stanok-img {
-      max-height: 100vw;
+      max-height: 40vw;
     }
     iframe{
       max-width: 50vw;
