@@ -1,7 +1,4 @@
-html {
-  margin: 0;
-  padding: 0;
-}
+
 body  {
     background-color: white;
     font-family: Arial, sans-serif;
@@ -149,7 +146,6 @@ button{
       text-align: center;
       padding: 100px; /* Регулируйте отступы по своему усмотрению */
       position: relative;
-      overflow: hidden;
     }
 
 
@@ -206,11 +202,8 @@ button{
         width: 100px;
       }
       header {
-        height: 80px;
+        height: 41px;
         padding: 10px;
-      }
-      .section {
-          width: 100%;
       }
   
       .textcols-item{
@@ -234,6 +227,9 @@ button{
       
   }
   @media (max-width: 768px) {
+    h1{
+      font-size: 40px;
+  }
     nav {
         background-color: #333333e7;
       }
@@ -248,20 +244,11 @@ button{
     #menu-icon + label + nav {
         max-height: 0;
     }
-    .textcols {
-      white-space: wrap;
-    }
-    
-    .textcols-item_3 {
-      width: 50%;
-    }
-    .textcols .textcols-item:first-child {
-      margin-bottom: 10%;
-    }
+
   }
   @media (max-width: 624px){
     h1{
-        font-size: 44px;
+        font-size: 40px;
     }
     h2{
         font-size: 34px;
@@ -272,11 +259,47 @@ button{
     h4{
       font-size: 18px;
     }
-
+    .textcols-item {
+      width: 80%;
+    }
+    .textcols {
+      white-space: wrap;
+    }
+    
+    .textcols-item_3 {
+      width: 70%;
+    }
+    
+    .textcols .textcols-item:first-child {
+      margin-bottom: 10%;
+    }
   }
 
   @media (max-width: 536px){
-    
+    h1{
+      font-size: 38px;
+    }
+    h2 h3{
+      font-size: 24px;
+  }
+  .textcols-item_3 {
+    width: 90%;
+  }
+    .stanok-img {
+      max-height: 40vw;
+    }
+    iframe{
+      max-width: 50vw;
+      max-height: 50vw;
+    }
+  }
+  @media (max-width: 432px){
+    h1{
+      font-size: 30px;
+    }
+    h2{
+      font-size: 20px;
+  }
     .stanok-img {
       max-height: 40vw;
     }
@@ -287,7 +310,7 @@ button{
   }
   @media (max-width: 360px){
     h1{
-      font-size: 34px;
+      font-size: 24px;
     }
     h2{
         font-size: 24px;
@@ -298,4 +321,11 @@ button{
     h4 h5{
       font-size: 16px;
     }
+    .textcols-item_3 {
+      width: 90%;
+    }
+    .textcols-item {
+      width: 90%;
+    }
   }
+  
