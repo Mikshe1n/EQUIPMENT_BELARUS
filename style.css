@@ -94,9 +94,9 @@ h3 {
     z-index: 1000;
 }
 
-.textcols {
+/* .textcols {
 	white-space: nowrap;
-}
+} */
 .textcols-item {
     padding: 1em;
     text-align: left;
@@ -156,7 +156,6 @@ button{
       text-align: center;
       padding: 100px; /* Регулируйте отступы по своему усмотрению */
       position: relative;
-      overflow: hidden;
     }
 
 
@@ -169,13 +168,12 @@ button{
       text-align: center;
       padding: 100px; /* Регулируйте отступы по своему усмотрению */
       position: relative;
-      overflow: hidden;
     }
 
-.r_prp{
-  max-height: 40vw;
-}
-
+    .r_prp{
+      max-height: 40vw;
+    }
+    
     .stanok-img {
       max-width: 60vw;
       max-height: 20vw;
@@ -184,13 +182,6 @@ button{
     .Ico-feedback{
       max-width: 8vh;
       max-height: 8vh;
-    }
-
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1em;
     }
     
 
@@ -226,9 +217,12 @@ button{
       
   }
   @media (max-width: 768px) {
-    h1{
+    h1 {
       font-size: 40px;
-  }
+    }
+    h2 {
+      font-size: 38px;
+    }
     nav {
         background-color: #333333e7;
       }
@@ -243,7 +237,18 @@ button{
     #menu-icon + label + nav {
         max-height: 0;
     }
-
+    .textcols-item {
+      width: 80%;
+    }
+    /* .textcols {
+      white-space: wrap;
+    } */
+    .textcols-item_3 {
+      width: 70%;
+    }
+    .textcols .textcols-item:first-child {
+      margin-bottom: 10%;
+    }
   }
   @media (max-width: 624px){
     h1{
@@ -257,20 +262,6 @@ button{
     }
     h4{
       font-size: 18px;
-    }
-    .textcols-item {
-      width: 80%;
-    }
-    .textcols {
-      white-space: wrap;
-    }
-    
-    .textcols-item_3 {
-      width: 70%;
-    }
-    
-    .textcols .textcols-item:first-child {
-      margin-bottom: 10%;
     }
   }
 
@@ -309,16 +300,16 @@ button{
   }
   @media (max-width: 360px){
     h1{
-      font-size: 24px;
-    }
-    h2{
-        font-size: 24px;
-    }
-    h3{
       font-size: 18px;
     }
+    h2{
+        font-size: 16px;
+    }
+    h3{
+      font-size: 14px;
+    }
     h4 h5{
-      font-size: 16px;
+      font-size: 14px;
     }
     .textcols-item_3 {
       width: 90%;
