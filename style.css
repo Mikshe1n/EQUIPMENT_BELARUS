@@ -126,7 +126,6 @@ h3 {
 
 table {
     width: 100%;
-    padding: 0.5em;
     line-height: normal;
 }
     tr td{
@@ -292,7 +291,7 @@ footer {
   }
   @media (max-width: 432px){
     h1{
-      font-size: 30px;
+      font-size: 26px;
     }
     h2{
       font-size: 20px;
@@ -322,7 +321,7 @@ footer {
       width: 90%;
     }
     .textcols-item {
-      width: 90%;
+      width: 100%;
     }
   }
   
