@@ -137,6 +137,13 @@ button{
       background-color: rgba(255, 255, 255, 0); 
       border: 0px;
     }
+footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+    }
+
     #section0 {
       background-image: url('./Images/sec0.jpg'); /* Укажите путь к вашей фотографии */
       background-size: cover;
@@ -171,7 +178,7 @@ button{
     }
 
     .r_prp{
-      max-height: 40vw;
+      max-height: 35vw;
     }
     
     .stanok-img {
